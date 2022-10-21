@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cswind</title>
+    <link rel="shortcut icon" href="favi.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="header-wrap">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </h1>
+            <!-- 메뉴 -->
+            <nav class="gnb">
+                <ul class="depth1">
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">씨에스윈드 소개</a></li>
+                            <li><a href="#">경영철학</a></li>
+                            <li><a href="#">연혁 &amp; 실적</a></li>
+                            <li><a href="#">사업장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사업소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">풍력발전사업</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">제품소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">Onshore</a></li>
+                            <li><a href="#">Offshore</a></li>
+                            <li><a href="#">Others</a></li>
+                            <li><a href="#">Plant equiment</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">생산공정</a></li>
+                    <li>
+                        <a href="#">ESG</a>
+                        <ul class="depth2">
+                            <li><a href="#">CEO 메세지</a></li>
+                            <li><a href="#">인권경영</a></li>
+                            <li><a href="#">윤리규범</a></li>
+                            <li><a href="#">신고센터</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">IR</a>
+                        <ul class="depth2">
+                            <li><a href="#">공고</a></li>
+                            <li><a href="#">공시정보</a></li>
+                            <li><a href="#">추가정보</a></li>
+                            <li><a href="#">재무정보</a></li>
+                            <li><a href="#">IR 자료실</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">채용정보</a>
+                        <ul class="depth2">
+                            <li><a href="#">인재상 및 채용안내</a></li>
+                            <li><a href="#">채용공고</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">PR</a>
+                        <ul class="depth2">
+                            <li><a href="#">홍보동영상</a></li>
+                            <li><a href="#">브로셔</a></li>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                            <li><a href="#">수상내역 및 인증서</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 오른쪽 메뉴 -->
+            <div class="gnb-util">
+                <div class="lang">
+                    <span>KR</span>
+                </div>
+                <div class="hamberger">
+                    <a href="#">
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 햄버거 메뉴 -->
+    <nav class="hamberger-menu">
+        <div class="hamberger-wrap">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </h1>
+            <ul class="depth1">
+                <li>
+                    <a href="#">회사소개</a>
+                    <ul class="depth2">
+                        <li><a href="#">씨에스윈드 소개</a></li>
+                        <li><a href="#">경영철학</a></li>
+                        <li><a href="#">연혁 &amp; 실적</a></li>
+                        <li><a href="#">사업장</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사업소개</a>
+                    <ul class="depth2">
+                        <li><a href="#">풍력발전사업</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">제품소개</a>
+                    <ul class="depth2">
+                        <li><a href="#">Onshore</a></li>
+                        <li><a href="#">Offshore</a></li>
+                        <li><a href="#">Others</a></li>
+                        <li><a href="#">Plant equiment</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">생산공정</a></li>
+                <li>
+                    <a href="#">ESG</a>
+                    <ul class="depth2">
+                        <li><a href="#">CEO 메세지</a></li>
+                        <li><a href="#">인권경영</a></li>
+                        <li><a href="#">윤리규범</a></li>
+                        <li><a href="#">신고센터</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">IR</a>
+                    <ul class="depth2">
+                        <li><a href="#">공고</a></li>
+                        <li><a href="#">공시정보</a></li>
+                        <li><a href="#">추가정보</a></li>
+                        <li><a href="#">재무정보</a></li>
+                        <li><a href="#">IR 자료실</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">채용정보</a>
+                    <ul class="depth2">
+                        <li><a href="#">인재상 및 채용안내</a></li>
+                        <li><a href="#">채용공고</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PR</a>
+                    <ul class="depth2">
+                        <li><a href="#">홍보동영상</a></li>
+                        <li><a href="#">브로셔</a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">사회공헌</a></li>
+                        <li><a href="#">수상내역 및 인증서</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="close" href="#">
+                <div class="line"></div>
+                <div class="line"></div>
+            </a>
+        </div>
+    </nav>
+    <!-- 모바일 햄버거 -->
+    <nav class="m-menu">
+        <div class="hamberger-wrap">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </h1>
+            <ul class="depth1">
+                <li class="m1">
+                    <a href="#">회사소개</a>
+                    <ul class="m2">
+                        <li><a href="#">씨에스윈드 소개</a></li>
+                        <li><a href="#">경영철학</a></li>
+                        <li><a href="#">연혁 &amp; 실적</a></li>
+                        <li><a href="#">사업장</a></li>
+                    </ul>
+                </li>
+                <li class="m1">
+                    <a href="#">사업소개</a>
+                    <ul class="m2">
+                        <li><a href="#">풍력발전사업</a></li>
+                    </ul>
+                </li>
+                <li class="m1">
+                    <a href="#">제품소개</a>
+                    <ul class="m2">
+                        <li><a href="#">Onshore</a></li>
+                        <li><a href="#">Offshore</a></li>
+                        <li><a href="#">Others</a></li>
+                        <li><a href="#">Plant equiment</a></li>
+                    </ul>
+                </li>
+                <li class="m1"><a href="#">생산공정</a></li>
+                <li class="m1">
+                    <a href="#">ESG</a>
+                    <ul class="m2">
+                        <li><a href="#">CEO 메세지</a></li>
+                        <li><a href="#">인권경영</a></li>
+                        <li><a href="#">윤리규범</a></li>
+                        <li><a href="#">신고센터</a></li>
+                    </ul>
+                </li>
+                <li class="m1">
+                    <a href="#">IR</a>
+                    <ul class="m2">
+                        <li><a href="#">공고</a></li>
+                        <li><a href="#">공시정보</a></li>
+                        <li><a href="#">추가정보</a></li>
+                        <li><a href="#">재무정보</a></li>
+                        <li><a href="#">IR 자료실</a></li>
+                    </ul>
+                </li>
+                <li class="m1">
+                    <a href="#">채용정보</a>
+                    <ul class="m2">
+                        <li><a href="#">인재상 및 채용안내</a></li>
+                        <li><a href="#">채용공고</a></li>
+                    </ul>
+                </li>
+                <li class="m1">
+                    <a href="#">PR</a>
+                    <ul class="m2">
+                        <li><a href="#">홍보동영상</a></li>
+                        <li><a href="#">브로셔</a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">사회공헌</a></li>
+                        <li><a href="#">수상내역 및 인증서</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="close" href="#">
+                <div class="line"></div>
+                <div class="line"></div>
+            </a>
+        </div>
+    </nav>
+    <!--//헤더 -->
+    <!-- 메인배너 영역 -->
+    <section class="main">
+        <div class="swiper banner-swiper">
+            <div class="swiper-wrapper">
+                <!-- <div class="swiper-slide">
+                    <img src="images/banner-bg01.png" alt="인간과 자연을 위한 새로운 가치를 창조합니다">
+                    <div class="tit">
+                        <h2>인간과 자연을 위한</h2>
+                        <h2>새로운 가치를 창조합니다</h2>
+                        <p>인간과 자연의 사이에서 새로운 가치를 만듭니다. 씨에스윈드</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/banner-bg02.png" alt="에너지 솔루션 분야의 글로벌리더로사 가치 제공">
+                    <div class="tit">
+                        <h2>에너지 솔루션 분야의</h2>
+                        <h2>글로벌리더로서 가치 제공</h2>
+                        <p>에너질 솔루션 분야의 글로벌 리더로서 고객에게 가치를 제공합니다.</p>
+                    </div>
+                </div>
+                <div class="count">
+                    <p>0
+                        <span class="current"></span>
+                    </p>
+                    <div class="progress">
+                        <span class="time"></span>
+                        <span class="bg"></span>
+                    </div>
+                    <p>0
+                        <span class="length"></span>
+                    </p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- 2.제품사업 영역 -->
+    <section class="business">
+        <div class="sec-txt">
+            <div class="tit" data-aos="fade-right" data-aos-duration="1200" data-aos-offset="-100">
+                <h2>씨에스윈드</h2>
+                <h2>제품&middot;사업</h2>
+            </div>
+            <p class="sub-txt" data-aos="fade-right" data-aos-offset="-100" data-aos-duration="1400">
+                씨에스윈드의 높은수준의 제품 및 사업을 소개합니다.
+            </p>
+            <div class="sw-pagination" data-aos="fade-right" data-aos-offset="-100" data-aos-duration="1500">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="swiper prod-swiper" data-aos="fade-left" data-aos-duration="1400">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/prod_01.jpg" alt="온쇼어풍력기">
+                        <div class="title-box">
+                            <div class="prod-title">
+                                <p>onshore</p>
+                                <p>windtower</p>
+                            </div>
+                            <p class="subtitle">온쇼어 풍력타워</p>
+                        </div>
+                        <div class="line-ctn">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/prod_02.jpg" alt="오프쇼어풍력기">
+                        <div class="title-box">
+                            <div class="prod-title">
+                                <p>offshore</p>
+                                <p>windtower</p>
+                            </div>
+                            <p class="subtitle">오프쇼어 풍력타워</p>
+                        </div>
+                        <div class="line-ctn">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/prod_03.jpg" alt="트랜지션 피스">
+                        <div class="title-box">
+                            <div class="prod-title">
+                                <p>transition</p>
+                                <p>piece</p>
+                            </div>
+                            <p class="subtitle">트랜지션 피스</p>
+                        </div>
+                        <div class="line-ctn">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/prod_04.jpg" alt="타워인터널">
+                        <div class="title-box">
+                            <div class="prod-title">
+                                <p>tower</p>
+                                <p>internal</p>
+                            </div>
+                            <p class="subtitle">타워 인터널</p>
+                        </div>
+                        <div class="line-ctn">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/prod_05.jpg" alt="플랜트산업 확장">
+                        <div class="title-box">
+                            <div class="prod-title">
+                                <p>plant</p>
+                                <p>equifment</p>
+                            </div>
+                            <p class="subtitle">플랜트산업 확장</p>
+                        </div>
+                        <div class="line-ctn">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="images/prod_06.jpg" alt="풍력발전기">
+                        <div class="title-box">
+                            <div class="prod-title">
+                                <p>wind power</p>
+                                <p>generator</p>
+                            </div>
+                            <p class="subtitle">풍력발전기</p>
+                        </div>
+                        <div class="line-ctn">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-right"></div>
+    </section>
+    <!-- 지속가능경영 영역 -->
+    <section class="esg">
+        <div class="esg-wrap">
+            <div class="sec-txt">
+                <div class="tit" data-aos="fade-down" data-aos-duration="1600" data-aos-offset="100">
+                    <h2>지속가능경영</h2>
+                </div>
+                <p class="sub-txt" data-aos="fade-down" data-aos-duration="1700" data-aos-offset="-50">
+                    지속가능경영이 더 나은 미래를 이끌어 나갑니다.
+                </p>
+            </div>
+            <ul class="esg-list" data-aos="fade-down" data-aos-duration="1400" data-aos-delay="300"
+                data-aos-offset="-300">
+                <li>
+                    <div class="esg-item">
+                        <img src="images/esg01.png" alt="ceo메세지">
+                    </div>
+                    <div class="txt-wrap">
+                        <div class="title">CEO메세지</div>
+                        <p>자연과 공존하는 인류의 진보</p>
+                        <p>가치 실현</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="esg-item">
+                        <img src="images/esg02.png" alt="윤리경영">
+                    </div>
+                    <div class="txt-wrap">
+                        <div class="title">윤리규범</div>
+                        <p> 엄격한 윤리의식을 바탕으로</p>
+                        <p>높은 수준의 친환경 경영을 실천</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="esg-item03">
+                        <img src="images/esg03.png" alt="인권경영">
+                    </div>
+                    <div class="txt-wrap">
+                        <div class="title">인권경영</div>
+                        <p>우리는 모든 사람의 인간다운 삶을 </p>
+                        <p>인권으로서 존중합니다 </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 씨에스윈드 소식 영역 -->
+    <section class="notice">
+        <div class="notice-wrap">
+            <div class="sec-txt">
+                <div class="tit" data-aos="fade-down" data-aos-duration="1600" data-aos-offset="100">
+                    <h2>씨에스윈드소식</h2>
+                </div>
+                <p class="sub-txt" data-aos="fade-down" data-aos-duration="1900" data-aos-offset="-100">
+                    씨에스윈드가 다음 세대에게 더 깨끗한 환경을 물려줄 수 있도록 최선을 다하겠습니다.
+                </p>
+            </div>
+            <div class="list-wrap">
+                <ul class="notice-list">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/ir.jpg" alt="IR">
+                            <p>IR</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/pr.jpg" alt="PR">
+                            <p>PR</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/process.jpg" alt="생산공정">
+                            <p>생산공정</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img src="images/history.jpg" alt="연혁실적">
+                            <p>연혁&middot;실적</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 채용 / 문의 영역 -->
+    <section class="reccon">
+        <div class="recruit">
+            <p>세계를 향한 끊임없는 도전과 열정, 그리고 소중한 꿈을 함께합니다.</p>
+            <h3>RECRUIT</h3>
+            <img src="images/reccon-arrow.png" alt="더보기">
+        </div>
+        <div class="contact">
+            <p>투자문의, 채용문의 등 씨에스윈드에 궁금하신 점을 문의해주세요.</p>
+            <h3>CONTACT</h3>
+            <img src="images/reccon-arrow.png" alt="더보기">
+        </div>
+    </section>
+    <div class="go-top">
+        <a href="javascript:void(0)">Top</a>
+    </div>
+    <footer class="footer">
+        <div class="footer-wrap">
+            <div class="left">
+                <ul>
+                    <li>본사 : 서울특별시 강남구 언주로 723 씨에스윈드본사</li>
+                    <li>TEL : 02-6480-1800</li>
+                    <li>FAX : 02-6480-1999</li>
+                </ul>
+                <p>COPYRIGHT 2022 CS WIND CORPORATION. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="right">
+                <a href="javascript:void(0)">
+                    <p>FAMILY SITE</p>
+                </a>
+                <ul>
+                    <li><a href="javascript:void(0)">CS Bearing</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="window"></div>
+</body>
+
+</html>
