@@ -137,7 +137,7 @@ $("document").ready(function () {
     let banner = new Swiper(".banner-swiper", {
         effect: "fade",
         autoplay: {
-            delay: 6000
+            delay: 5500
         },
         loop: true,
     });
